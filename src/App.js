@@ -20,7 +20,7 @@ class App extends Component {
         < DevTools />
         <input onChange = {this.handleChange}/>
         <button onClick = {this.addItem}>Add</button>
-        {this.props.store.list.map((i,ind) => <Item item = {i} 
+        {this.props.store.list.map((i,ind) => <span>{i.location} </span> <Item item = {i} 
                                          key = {ind}
         store = {this.props.store}/>)}  
       </div>

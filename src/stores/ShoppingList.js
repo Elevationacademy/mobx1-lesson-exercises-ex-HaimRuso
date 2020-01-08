@@ -17,7 +17,7 @@ export class ShoppingList {
         let item =this.list.find(i=> i.name===name)
         item.location=location
     }
-    deleteItem = (name) => {
+    @action deleteItem = (name) => {
         for(let item in this.list){
             if(this.list[item].name===name){
                 this.list.splice(item,1)

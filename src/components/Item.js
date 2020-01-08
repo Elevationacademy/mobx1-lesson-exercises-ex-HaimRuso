@@ -18,7 +18,7 @@ class Item extends Component {
         return (
             <div className = {item.completed ? "crossed": null}>
            {<input type="checkbox" value={item.name} onClick={this.checkItem}/> } 
-        <span>{item.location} </span>{item.name}
+          {item.name}
            <button value={item.name} onClick={this.editItem}>editButton</button>
            <button value={item.name} onClick={this.deleteItem}>delete</button>
             </div>)
